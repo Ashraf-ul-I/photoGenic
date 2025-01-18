@@ -15,10 +15,6 @@ const imageUploadSchema=new Schema({
                 type:Array,
                 default:[]
             },
-            comments:{
-                type:Array,
-                default:[]
-            },
             description:{
                 type:String
             },
@@ -30,6 +26,6 @@ const imageUploadSchema=new Schema({
 
 
     
-})
+},{timestamps:true})
 
 export const ImageUploader= mongoose.model('ImageUploader',imageUploadSchema);
